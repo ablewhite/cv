@@ -1,0 +1,186 @@
+@aside_background: #eee;
+@transition_duration: .25s;
+@transition_function: ease;
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #222;
+}
+
+aside {
+  background-color: @aside_background;
+  padding: 0 2rem 1rem 1rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: @aside_background;
+    height: 100%;
+    position: absolute;
+    left: -100em;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+}
+
+main {
+  height: 100%;
+  position: relative;
+
+  > .d-flex {
+    min-height: 100%;
+  }
+
+}
+
+section {
+  padding: 1rem;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.navbar {
+  transition: all 1s ease;
+
+  &.fixed-top {
+    top: -3em;
+  }
+
+  &.fixed-bottom {
+    bottom: -4em;
+    background: #aaa;
+    box-shadow: 2px -2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    .navbar-nav {
+      flex-direction: row;
+      font-size: .85em;
+      justify-content: space-between;
+
+      .nav-item {
+        padding: 0 .7em;
+        color: #f8f8f8;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+
+        .fa-fw,
+        a {
+          color: #f8f8f8;
+        }
+
+        a:hover {
+          color: #fff;
+          border-bottom-color: #fff;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+  .container {
+    max-width: 1024px;
+    padding: 0;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .container {
+    max-width: 768px;
+    padding: 0;
+  }
+}
+
+@media only screen
+and (max-device-width: 767px) {
+
+  main {
+    padding: 0 !important;
+
+    > .d-flex {
+      flex-direction: column;
+    }
+
+  }
+
+  aside,
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section {
+    padding-bottom: 3em;
+  }
+
+  .sticky-top {
+    position: static !important;
+  }
+
+}
+
+@media print {
+
+  aside {
+    min-width: 22em;
+
+    .sticky-top {
+      position: static !important;
+    }
+
+    h3 > span {
+      background-color: #fff !important;
+    }
+
+  }
+
+  aside, section {
+    padding-top: 3rem;
+  }
+
+  aside,
+  aside:before {
+    background: transparent !important;
+  }
+
+  *,
+  *:before,
+  *:after {
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+}
+
+// VueJS specific
+[v-cloak] {
+  display: none;
+}

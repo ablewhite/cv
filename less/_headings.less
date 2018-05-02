@@ -1,0 +1,117 @@
+@name_font: 'Suez One';
+@subheading_font: 'Marcellus SC';
+
+h1 {
+  font-family: @name_font, serif;
+  color: #444;
+  font-size: 4.75rem;
+  text-align: center;
+
+  &.name {
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  .surname {
+    display: block;
+    font-size: 2.7rem;
+    line-height: 1.25rem;
+  }
+
+}
+
+.navbar.fixed-top {
+  background: #aaa;
+  justify-content: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: #f8f8f8;
+    text-transform: uppercase;
+  }
+
+}
+
+h2 {
+  font-family: @subheading_font, serif;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 0 .5em 0;
+  margin-bottom: .5em;
+}
+
+h3 {
+  font-family: @subheading_font, serif;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  > span {
+    background-color: #fff;
+    padding: 0 1rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    margin: 0 auto;
+    width: 100%;
+    z-index: -1;
+  }
+
+}
+
+aside h3 {
+
+  &::before {
+    border-top-color: #ccc;
+  }
+
+  > span {
+    background-color: @aside_background;
+  }
+
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+
+  > small {
+    font-size: 1rem;
+    font-style: italic;
+    display: block;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen
+and (max-device-width: 767px) {
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+
+    > span {
+      padding: 0 .5rem;
+    }
+
+  }
+}

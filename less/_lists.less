@@ -1,0 +1,154 @@
+.single-line > li {
+  margin-bottom: .25rem;
+}
+
+ul.dividers {
+
+  header {
+    margin-top: 1rem;
+  }
+
+  > li {
+    border-bottom: 1px solid #eee;
+
+    &:last-of-type {
+      border: 0;
+    }
+
+    &:first-of-type header {
+      margin-top: 0;
+    }
+
+  }
+
+}
+
+.flex-row > time {
+  margin-left: auto;
+  text-align: right;
+}
+
+ul.list-unstyled ul > li {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+ul.education-qualifications {
+
+  time {
+    width: 10em;
+  }
+
+}
+
+.portfolio {
+
+  > li {
+    line-height: 1.6;
+
+    > a {
+      display: inline-block;
+
+      .fa-2x {
+        color: #aaa;
+        transition: color @transition_duration @transition_function;
+      }
+
+      &:hover .fa-2x {
+        color: #007bff;
+      }
+
+      div {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        font-size: .75em;
+      }
+
+    }
+
+  }
+
+}
+
+.contact {
+  margin-left: 1.5em;
+
+  > li {
+    line-height: 1.6;
+  }
+
+}
+
+.portfolio {
+  column-count: 3;
+}
+
+.skills-list > li {
+  display: inline-block;
+  width: 32%;
+}
+
+// ie10 +
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  ul.education-qualifications > li > .d-flex {
+    display: block !important;
+
+    time {
+      float: right;
+      text-align: right;
+    }
+
+  }
+}
+
+@media only screen
+and (max-device-width: 767px) {
+
+  .flex-row > time {
+    text-align: right;
+    width: 6em;
+  }
+
+  ul.education-qualifications {
+
+    time {
+      width: 15em;
+    }
+
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .professional-experience > li ul {
+    column-count: 2;
+  }
+
+}
+
+@media print {
+
+  .contact, .portfolio {
+    font-size: .9em;
+  }
+
+  .portfolio {
+    margin-left: 1em;
+    column-count: 1;
+
+    li > a {
+      font-size: .85rem;
+    }
+
+    .fab {
+      color: #222;
+    }
+
+  }
+
+  a.portfolio-link::after {
+    content: attr(href);
+  }
+
+}

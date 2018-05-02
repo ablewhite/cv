@@ -1,0 +1,158 @@
+{
+  "forename": "Conan",
+  "surname": "Ablewhite",
+  "title": "Front end developer",
+  "contact": [
+    {
+      "description": "[REDACTED]",
+      "icon": "fas fa-phone",
+      "footer": false
+    },
+    {
+      "description": "[REDACTED]",
+      "icon": "fas fa-mobile-alt",
+      "footer": true
+    },
+    {
+      "description": "test@example.com",
+      "url": "mailto:test@example.com",
+      "icon": "far fa-envelope-open",
+      "footer": true
+    },
+    {
+      "description": "linkedin.com/in/conan-ablewhite",
+      "url": "https://www.linkedin.com/in/conan-ablewhite/",
+      "icon": "fab fa-linkedin",
+      "footer": false
+    }
+  ],
+  "portfolio": [
+    {
+      "description": "GitHub",
+      "url": "http://www.github.com/ablewhite",
+      "icon": "fab fa-github"
+    },
+    {
+      "description": "Codepen",
+      "url": "http://www.codepen.io/ablewhite",
+      "icon": "fab fa-codepen"
+    },
+    {
+      "description": "Stack Overflow",
+      "url": "https://www.stackoverflow.com/story/cablewhite",
+      "icon": "fab fa-stack-overflow"
+    }
+  ],
+  "skills": [
+    {
+      "description": "HTML5",
+      "percentage": "95"
+    },
+    {
+      "description": "CSS3",
+      "percentage": "90"
+    },
+    {
+      "description": "JavaScript",
+      "percentage": "80"
+    },
+    {
+      "description": "C#",
+      "percentage": "70"
+    },
+    {
+      "description": "Python",
+      "percentage": "70"
+    },
+    {
+      "description": "jQuery",
+      "percentage": "90"
+    }
+  ],
+  "address": [
+    "Street",
+    "City",
+    "County POST CODE"
+  ],
+  "url": "https://github.com/ablewhite/cv",
+  "profile": {
+    "title": "Hard-working designer / developer who loves to build innovative user experiences. Looking to increase my breadth of knowledge using cutting-edge JavaScript frameworks such as Angular, React and VueJS, while continuing to develop my existing skills in the field of responsive user interface design.",
+    "points": [
+      "Keen awareness of the need for consistency and clarity in user interface design",
+      "Capable of working from own initiative and accomplishing both team or individual goals",
+      "Five years experience building and extending sites utilising Bootstrap",
+      "Experience using industry-standard applications including TFS, Jira, BitBucket, Photoshop",
+      "Fluent in HTML5, JavaScript, CSS3, C#, Python, PHP",
+      "Working knowledge of C, SQL, Git, NodeJS"
+    ]
+  },
+  "education": [
+    {
+      "description": "Microsoft Exam 480: Programming in HTML5 with JavaScript and CSS3",
+      "from": "2013-03"
+    },
+    {
+      "description": "Microsoft Office User Specialist (MOS) Office 2000 Word Expert (100%)",
+      "from": "2002-03",
+      "to": "2002-04"
+    },
+    {
+      "description": "General Certificate of Secondary Education (seven passes at grade C & above)",
+      "from": "1987",
+      "to": "1990"
+    }
+  ],
+  "experience": [
+    {
+      "company": "IRESS (UK) Limited",
+      "title": "Software engineer",
+      "from": "2004-02",
+      "points": [
+        "Front-end design and development of a modular mortgage and protection sourcing platform for intermediaries (SPA using KnockoutJS / Durandal)",
+        "Experience with Angular 1.x, including a responsive mobile site utilising the Ionic framework",
+        "Developed Python-based Selenium smoke tests for early visibility of build issues",
+        "Three years experience in an agile Scrum-based project",
+        "Proud member of the global winner team in the IRESS 2016 Hackathon",
+        "Developed VB.NET / C#-based Windows applications (console, WinForms and WPF) using MS Visual Studio / Blend",
+        "Polished user interface for multiple web projects using LESS, SASS, Bootstrap",
+        "Improved accessibility standards by ensuring WCAG2AA compliance",
+        "Workflow tools included Git, Gerrit, BitBucket, Gulp, jQuery"
+      ]
+    },
+    {
+      "company": "TRM Investments Limited (TRMI)",
+      "title": "Software engineer",
+      "from": "2002-09",
+      "to": "2004-02",
+      "points": [
+        "Sole responsibility of front-end design and development of iTrak wealth management software",
+        "Development and maintenance of associated setup utility and help documentation",
+        "Design, development and maintenance of a series of in-house Delphi programs for a local company"
+      ]
+    },
+    {
+      "company": "C.A. Software Limited",
+      "title": "Software engineer / Webmaster",
+      "from": "1993-03",
+      "to": "2002-09",
+      "points": [
+        "Application design and development of flagship products for the company, including a Windows-based personal financial package and a profit-related pay tax calculator",
+        "Design and development of various in-house WinForms applications",
+        "Set up and maintenance of peer-to-peer network",
+        "Design and maintenance of company website",
+        "Assisting with the inspection, testing and shipping of electronic hardware"
+      ]
+    },
+    {
+      "company": "Duplus Domes Limited",
+      "title": "Junior draughtsman",
+      "from": "1990-09",
+      "to": "1993-03",
+      "points": [
+        "Liaising with clients / architects on project requirements",
+        "Use of CAD system to produce both architectural and workshop technical drawings",
+        "Design, development and maintenance of several programs to increase the efficiency and accuracy of calculations within the drawing office"
+      ]
+    }
+  ]
+}

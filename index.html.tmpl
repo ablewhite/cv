@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus+SC|Suez+One|Source+Sans+Pro:400,400i,600,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cv.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser.
+    Please <a href="https://browsehappy.com/" target="_blank" rel="noopener">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<main id="app" class="container">
+
+    <nav class="navbar fixed-top d-block d-sm-none">
+        <%= fixed_header %>
+    </nav>
+
+    <div class="d-flex">
+        <aside>
+            <div class="sticky-top">
+
+                <%= header %>
+
+                <h3><span>Contact</span></h3>
+                <%= contact %>
+
+                <h3><span>Portfolio</span></h3>
+                <%= portfolio %>
+
+                <h3><span>Skills</span></h3>
+                <%= skills %>
+
+                <hr class="mt-2" />
+
+                <%= address %>
+
+                <p class="footer d-print-none">
+                    Design &amp; coding &copy;<%= copyright %> <%= fullName %>
+                </p>
+
+                <p class="footer">
+                    References are available on request
+                </p>
+
+                <p class="footer">
+                    <span class="d-print-none">
+                        <a id="print_link" href="#"><span class="fas fa-print"></span> Click here</a> for a hard copy
+                    </span>
+
+                    <span class="d-none d-print-block">
+                        <%= src_link %>
+                    </span>
+                </p>
+
+            </div>
+        </aside>
+
+        <section>
+            <h3><span>Profile</span></h3>
+            <%= profile %>
+
+            <h3><span>Education &amp; Qualifications</span></h3>
+            <%= education %>
+
+            <h3><span>Professional Experience</span></h3>
+            <%= experience %>
+        </section>
+    </div>
+
+    <nav class="navbar fixed-bottom d-block d-sm-none">
+        <%= fixed_footer %>
+    </nav>
+
+</main>
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+<script src="<%= vendor.src %>" integrity="<%= vendor.integrity %>" crossorigin="<%= vendor.crossorigin %>"></script>
+<script>window.<%= window_test %> || document.write('<script src="<%= local_script %>"><\/script>')</script>
+
+<script src="<%= vm_script %>"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
