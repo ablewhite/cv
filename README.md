@@ -11,7 +11,7 @@ CV generator demonstrating the following concepts:
 ## Demo Files
 
 Pre-built examples are available here:
-- http://www.ablewhite.com/cv/knockout_test.html
-- http://www.ablewhite.com/cv/vue_test.html
+- http://www.ablewhite.com/cv/knockout-test.html
+- http://www.ablewhite.com/cv/vue-test.html
 
 Please note, sensitive contact information has been redacted - should you wish to contact me, visit http://www.linkedin.com/in/conan-ablewhite.
